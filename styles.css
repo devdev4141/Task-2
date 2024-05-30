@@ -1,0 +1,212 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.top-bar {
+    background: #f8f9fa;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.social-icons a {
+    color: #2424b3;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-icons a i:hover{
+    font-size: 20px;
+}
+
+
+.contact-info span {
+    margin: 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .1s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f9c74f;
+    
+}
+
+.navbar .buttons a {
+    color: white;
+    background: #f9c74f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar .buttons a:hover {
+    background: #f9844a;
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJ1c2luZXNzfGVufDB8fHx8MTYyMTY5NzkwMQ&ixlib=rb-1.2.1&q=80&w=1200') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-section .hero-buttons .primary {
+    background: #f9c74f;
+}
+
+.hero-section .hero-buttons .primary:hover {
+    background: #f9844a;
+}
+
+.hero-section .hero-buttons .secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.hero-section .hero-buttons .secondary:hover {
+    background: white;
+    color: #333;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background: linear-gradient(90deg, #19d746, #e25b18, #afbe04);
+    color: white;
+    text-align: center;
+}
+
+.services .service-item {
+    flex: 1;
+    padding: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.services .service-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.services .service-item i {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-us img {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.our-services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.our-services .service-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.our-services .service-cards .card {
+    margin: 0 20px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.our-services .service-cards .card:hover {
+    background: rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+}
+
+.our-services .service-cards .card img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
